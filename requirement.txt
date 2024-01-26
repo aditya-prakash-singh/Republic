@@ -1,8 +1,0 @@
-streamlit
-pyshorteners
-Pillow
-numpy
-pandas
-nltk
-
-matplotlib
