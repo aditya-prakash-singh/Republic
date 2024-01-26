@@ -274,7 +274,7 @@ def show_stats():
                     padding: 5px; text-align: center;'>Developed BY<br><span style='color:#e8357d'>AdityaSingh</span></div>''', unsafe_allow_html=True)
         st.write('\n\n\n')
         st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
-                    padding: 5px; text-align: center;'>Best Moderator<br><span style='color:#e8357d'>Kaizar & Piyush</span><br>
+                    padding: 5px; text-align: center;'>Best Moderator<br><span style='color:#e8357d'>Kaizar & Piyush<br> Macbook & Deepanshu</span><br>
                     <span style='color:white;font-weight: bold;font-size:9px;'>(Ban Ho jaye lekin Chaploosi Na Jaye)</span></div>''', unsafe_allow_html=True)
         st.write('\n\n\n')
         st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
@@ -318,7 +318,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    navigation_options = ["Statistics","Indian Constitution","Articles By Name", "Articles By Parts","Amendments","QnA"]
+    navigation_options = ["Indian Constitution","Articles By Name", "Articles By Parts","Amendments","QnA","Statistics"]
     selected_option = st.sidebar.selectbox("Select Section", navigation_options)
 
     if selected_option == "Articles By Name":
