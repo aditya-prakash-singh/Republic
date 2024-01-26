@@ -4,5 +4,5 @@ Pillow
 numpy
 pandas
 nltk
-scikit-learn
+
 matplotlib
