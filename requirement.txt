@@ -1,5 +1,8 @@
 streamlit
+pyshorteners
+Pillow
+numpy
 pandas
+nltk
 scikit-learn
 matplotlib
-numpy
