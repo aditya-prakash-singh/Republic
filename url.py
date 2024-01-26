@@ -274,7 +274,7 @@ def show_stats():
                     padding: 5px; text-align: center;'>Developed BY<br><span style='color:#e8357d'>AdityaSingh</span></div>''', unsafe_allow_html=True)
         st.write('\n\n\n')
         st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
-                    padding: 5px; text-align: center;'>Best Moderator<br><span style='color:#e8357d'>Kaizar & Piyush<br> Macbook & Deepanshu</span><br>
+                    padding: 5px; text-align: center;'>Best Moderator<br><span style='color:#e8357d'>Kaizar & Piyush<br>Macbook & Deepanshu</span><br>
                     <span style='color:white;font-weight: bold;font-size:9px;'>(Ban Ho jaye lekin Chaploosi Na Jaye)</span></div>''', unsafe_allow_html=True)
         st.write('\n\n\n')
         st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
@@ -294,8 +294,42 @@ def show_stats():
     st.write('\n\n\n')
     st.image("rep.jpg", caption="Happy republic Day", use_column_width=True)
 
-
+def show_abt():
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>Indian Constitution Page<br><span style='color:#e8357d'>This page contains information about India and the Indian Constitution, including a timeline leading up to the establishment of the republic.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>Articles By Name Page<br><span style='color:#e8357d'>This page features articles that can be accessed using either the article title number or any term related to the article, such as '300A,' '5,' or terms like 'equality' and 'rights.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>Articles By Parts Page<br><span style='color:#e8357d'>This page includes sections of articles that can be accessed by selecting specific article parts. All articles within the chosen part are displayed below.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>Amendments Page<br><span style='color:#e8357d'>This page contains a comprehensive list of all the amendments made to the constitution.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>QnA Page<br><span style='color:#e8357d'>This page serves as a Q&A platform where users can pose questions on various topics, such as the subject matter or inquire about concepts like 'What is Panchayat?</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>Statistics Page<br><span style='color:#e8357d'>This page provides statistical information, including population, GDP, highest literacy rate, density per square kilometer, age distribution, and languages spoken.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>About Page<br><span style='color:#e8357d'>This page contains information about all the various sections available on the <a href="https://republic.streamlit.app/"> website</a>.</span>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
+    st.markdown(f'''<div style='color:blue;font-weight: bold;font-size:15px; border: 2px solid blue;border-radius: 7px; 
+                    padding: 5px; text-align: center;'>About  <a href="https://republic.streamlit.app/">Website</a><br><span style='color:#e8357d'>This website encompasses various information about the Indian Constitution, crafted with care using Matplotlib, data preprocessing, and Streamlit.</span>
+                    <br>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️<br>
+                    <span></span></div>''', unsafe_allow_html=True)
+    st.write('\n\n\n')
     
+
 #-------------------------------------------Main Section--------------------------------
 def main():
     st.markdown(
@@ -318,7 +352,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    navigation_options = ["Indian Constitution","Articles By Name", "Articles By Parts","Amendments","QnA","Statistics"]
+    navigation_options = ["Indian Constitution","Articles By Name", "Articles By Parts","Amendments","QnA","Statistics","About"]
     selected_option = st.sidebar.selectbox("Select Section", navigation_options)
 
     if selected_option == "Articles By Name":
@@ -333,6 +367,8 @@ def main():
         show_qna()
     elif selected_option == "Statistics":
         show_stats()
+    elif selected_option == "About":
+        show_abt()
 
 if __name__ == "__main__":
     st.title("Learning about Constitution")
